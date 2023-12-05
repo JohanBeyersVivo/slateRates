@@ -33,7 +33,7 @@
     }
   },
   "sap.ui5": {
-    "flexEnabled": false,
+    "flexEnabled": true,
     "dependencies": {
       "minUI5Version": "1.120.1",
       "libs": {
@@ -78,20 +78,36 @@
       },
       "routes": [
         {
-          "name": "RouteFirstScreen",
-          "pattern": ":?query:",
+          "name": "first",
+          "pattern": "",
           "target": [
-            "TargetFirstScreen"
+            "first"
+          ]
+        },
+        {
+          "name": "second",
+          "pattern": "",
+          "target": [
+            "second"
           ]
         }
       ],
       "targets": {
-        "TargetFirstScreen": {
+        "first": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
-          "viewId": "FirstScreen",
-          "viewName": "FirstScreen"
+          "viewId": "first",
+          "viewName": "FirstScreen",
+          "viewLevel": 1
+        },
+        "second": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "second",
+          "viewName": "SecondScreen",
+          "viewLevel": 2
         }
       }
     },

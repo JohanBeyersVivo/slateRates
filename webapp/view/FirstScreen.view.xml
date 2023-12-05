@@ -1,12 +1,13 @@
 <mvc:View
     xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
     xmlns="sap.m"
     controllerName="slaterates.controller.FirstScreen">
     <Page id="firstPage" title="First Screen">
         <!-- Your content for the first screen -->
-        <VBox>
+        <VBox id="vBox">
             <!-- Add your UI elements here -->
-            <Text text="This is the First Screen"/>
+            <Text id="textId" text="This is the First Screen"/>
 
             <!-- Example UI elements -->
             <!--<Button text="Go Back" press="onGoBack"/> -->

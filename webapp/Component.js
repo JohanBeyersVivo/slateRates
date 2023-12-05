@@ -1,5 +1,5 @@
 /**
- * eslint-disable @sap/ui5-jsdocs/no-jsdoc
+ * eslint-disable @sap/ui5-jsdocs/no-jsdoc 
  */
 
 sap.ui.define([
@@ -91,12 +91,23 @@ sap.ui.define([
                   oPage.addContent(createPostingButton);
                   oPage.addContent(downloadButton);
                   oPage.addContent(table);
-                },
+                
         
-                getSalesOrderFilter: function () {
-                  // Implement this function to get data based on input fields (similar to previous JavaScript example)
-                  // Use this.getView().getModel().setProperty("/propertyPath", value) to set values
-                }
+                
             },
-            
-        });
+            getSalesOrderFilter: function () {
+              // Implement this function to get data based on input fields (similar to previous JavaScript example)
+              // Use this.getView().getModel().setProperty("/propertyPath", value) to set values
+            },
+            getContentDensityClass: function () {
+              if (!this._sContentDensityClass) {
+                  if (Device.support.touch) {
+                      this._sContentDensityClass = "sapUiSizeCozy";
+                  } else {
+                      this._sContentDensityClass = "sapUiSizeCompact";
+                  }
+              }
+              return this._sContentDensityClass;
+          }
+        }); 
+      });

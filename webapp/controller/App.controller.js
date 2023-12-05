@@ -2,11 +2,12 @@ sap.ui.define(
     [
         "sap/ui/core/mvc/Controller"
     ],
-    function(BaseController) {
+    function(Controller) {
       "use strict";
   
-      return BaseController.extend("slaterates.controller.App", {
+      return Controller.extend("slaterates.controller.App", {
         onInit: function() {
+          this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());
         }
       });
     }
