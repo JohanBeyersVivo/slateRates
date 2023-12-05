@@ -1,0 +1,15 @@
+<mvc:View controllerName="slaterates.controller.FirstScreen"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page title="Second Screen">
+        <!-- Your content for the second screen -->
+        <VBox>
+            <!-- Add your UI elements here -->
+            <Text text="This is the Second Screen"/>
+            <!-- Example UI elements -->
+            <Button text="Go Back" press="onGoBack"/>
+        </VBox>
+    </Page>
+</mvc:View>
+
+    

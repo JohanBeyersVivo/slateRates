@@ -1,0 +1,24 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    controllerName="slaterates.controller.FirstScreen">
+    <Page id="firstPage" title="First Screen">
+        <!-- Your content for the first screen -->
+        <VBox>
+            <!-- Add your UI elements here -->
+            <Text text="This is the First Screen"/>
+
+            <!-- Example UI elements -->
+            <!--<Button text="Go Back" press="onGoBack"/> -->
+
+            <Input placeholder="Enter Company Code" value="{/companyCode}" id="companyCode"/>
+            <Input placeholder="Enter Period" value="{/period}" id="period"/>
+            <Input placeholder="Enter % of FOB" value="{/fobPercentage}" id="fobPercentage"/>
+            <Button text="Go" press="onGo" id="goButton"/>
+            <Button text="Clear" press="onClear" id="clearButton"/>
+            <Button text="Create Posting" press="onClickCreatePosting" id="createPostingButton"/>
+            <Button text="Download" press="onPressDownload1" id="downloadButton"/>
+
+        </VBox>
+    </Page>
+</mvc:View>
